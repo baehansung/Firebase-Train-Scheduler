@@ -1,0 +1,29 @@
+.title {
+    font-size: 40px;
+    background-color: cornflowerblue;
+    padding: 6%;
+    color: white;
+    text-align: center;
+}
+
+#train-schedule {
+    margin-top: 3%;
+    border-radius: 15px;
+}
+
+#add-title {
+    background-color: cornflowerblue;
+    padding: 1%;
+    margin: -2% -2% 1% -2%; 
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.add-train-table {
+    margin-top: 3%;
+    border: solid;
+    border-radius: 18px;
+    padding: 2%;
+}
