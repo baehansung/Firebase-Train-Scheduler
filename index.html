@@ -19,60 +19,61 @@
 </head>
 
 <body>
-    
-    <div class="container">
-        <div class="title">
-            Train Scheduler - Making sure you are on time everytime
-        </div>
+    <div class="bg">
+        <div class="container">
+            <div id="title">
+                Train Scheduler - Making sure you are on time everytime
+            </div>
 
-        <!-- Train Schedule TABLE -->
-        <table class="table table-dark" id="train-schedule">
-            <thead>
-                <tr>
-                    <th scope="col">Current Train Schedule</th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>Train Name</td>
-                    <td>Destination</td>
-                    <td>Frequency (min)</td>
-                    <td>Next Arrival</td>
-                    <td>Minutes Away</td>
-                </tr>
-            <tbody>
-            </tbody>
-        </table>
-
-        <!-- Add Train TABLE -->
-        <div class="add-train-table">
-            <table class="table" id="add-train">
-                <form>
-                    <div id="add-title">
-                        Add Train
-                    </div>
-                    <div class="form-group">
-                        <label for="train-name-header">Train Name</label>
-                        <input type="name" class="form-control" id="trainName" aria-describedby="enterTrain" placeholder="Enter Train Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="destination-header">Destination</label>
-                        <input type="text" class="form-control" id="trainDestination" placeholder="Desired Destination">
-                    </div>
-                    <div class="form-group">
-                        <label for="destination-header">First Train Time (HH:mm - Military Time)</label>
-                        <input type="text" class="form-control" id="trainTime" placeholder="Train Time">
-                    </div>
-                    <div class="form-group">
-                        <label for="destination-header">Frequency (min)</label>
-                        <input type="text" class="form-control" id="trainFrequency" placeholder="Frequency of Train in Minutes">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="add-submit-button">Submit</button>
-                </form>
+            <!-- Train Schedule TABLE -->
+            <table class="table table-dark" id="train-schedule">
+                <thead>
+                    <tr>
+                        <th scope="col">Current Train Schedule</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>Train Name</td>
+                        <td>Destination</td>
+                        <td>First Train Time</td>
+                        <td>Frequency (min)</td>
+                        <td>Next Arrival</td>
+                        <td>Minutes Away</td>
+                    </tr>
+                <tbody>
+                </tbody>
             </table>
+
+            <!-- Add Train TABLE -->
+            <div class="add-train-table">
+                <table class="table" id="add-train">
+                    <form>
+                        <div id="add-title">
+                            Add Train
+                        </div>
+                        <div class="form-group">
+                            <label for="train-name-header">Train Name</label>
+                            <input type="name" class="form-control" id="trainName" aria-describedby="enterTrain" placeholder="Enter Train Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-header">Destination</label>
+                            <input type="text" class="form-control" id="trainDestination" placeholder="Desired Destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-header">First Train Time (HH:mm - Military Time)</label>
+                            <input type="text" class="form-control" id="trainTime" placeholder="Train Time">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-header">Frequency (min)</label>
+                            <input type="text" class="form-control" id="trainFrequency" placeholder="Frequency of Train in Minutes">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="add-submit-button">Submit</button>
+                    </form>
+                </table>
+            </div>
+
         </div>
-
     </div>
-
 
     <script src="assets/js/train.js"></script>
 </body>
